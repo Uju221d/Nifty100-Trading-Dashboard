@@ -1,0 +1,110 @@
+symbol,company,sector
+HDFCBANK.NS,HDFC Bank Ltd,Banking
+ICICIBANK.NS,ICICI Bank Ltd,Banking
+SBIN.NS,State Bank of India,Banking
+KOTAKBANK.NS,Kotak Mahindra Bank,Banking
+AXISBANK.NS,Axis Bank,Banking
+INDUSINDBK.NS,IndusInd Bank,Banking
+BANKBARODA.NS,Bank of Baroda,Banking
+PNB.NS,Punjab National Bank,Banking
+IDFCFIRSTB.NS,IDFC First Bank,Banking
+RELIANCE.NS,Reliance Industries,Oil & Gas
+ONGC.NS,Oil & Natural Gas Corp,Oil & Gas
+IOC.NS,Indian Oil Corp,Oil & Gas
+BPCL.NS,Bharat Petroleum,Oil & Gas
+HINDPETRO.NS,Hindustan Petroleum,Oil & Gas
+TCS.NS,Tata Consultancy Services,IT
+INFY.NS,Infosys,IT
+WIPRO.NS,Wipro,IT
+HCLTECH.NS,HCL Technologies,IT
+TECHM.NS,Tech Mahindra,IT
+LTI.NS,LTI Mindtree,IT
+BHARTIARTL.NS,Bharti Airtel,Telecom
+HINDUNILVR.NS,Hindustan Unilever,FMCG
+ITC.NS,ITC Ltd,FMCG
+NESTLEIND.NS,Nestle India,FMCG
+BRITANNIA.NS,Britannia Industries,FMCG
+MARICO.NS,Marico Ltd,FMCG
+DABUR.NS,Dabur India,FMCG
+COLPAL.NS,Colgate Palmolive,FMCG
+PGHH.NS,P&G Hygiene,FMCG
+TATACONSUM.NS,Tata Consumer Products,FMCG
+MARUTI.NS,Maruti Suzuki,Auto
+M&M.NS,Mahindra & Mahindra,Auto
+TATAMOTORS.NS,Tata Motors,Auto
+BAJAJ-AUTO.NS,Bajaj Auto,Auto
+HEROMOTOCO.NS,Hero MotoCorp,Auto
+EICHERMOT.NS,Eicher Motors,Auto
+ASHOKLEY.NS,Ashok Leyland,Auto
+TVSMOTOR.NS,TVS Motor,Auto
+BAJAJFINSV.NS,Bajaj Finserv,Financial Services
+BAJFINANCE.NS,Bajaj Finance,Financial Services
+SUNPHARMA.NS,Sun Pharmaceutical,Pharma
+DRREDDY.NS,Dr Reddy's Labs,Pharma
+CIPLA.NS,Cipla,Pharma
+DIVISLAB.NS,Divi's Laboratories,Pharma
+BIOCON.NS,Biocon,Pharma
+LUPIN.NS,Lupin,Pharma
+GLAND.NS,Gland Pharma,Pharma
+TATASTEEL.NS,Tata Steel,Metals
+JSWSTEEL.NS,JSW Steel,Metals
+HINDALCO.NS,Hindalco Industries,Metals
+NATIONALUM.NS,National Aluminium,Metals
+COALINDIA.NS,Coal India,Mining
+VEDL.NS,Vedanta,Metals
+HINDZINC.NS,Hindustan Zinc,Metals
+LT.NS,Larsen & Toubro,Infrastructure
+ULTRACEMCO.NS,UltraTech Cement,Construction Materials
+SHREECEM.NS,Shree Cement,Construction Materials
+GRASIM.NS,Grasim Industries,Construction Materials
+ADANIPORTS.NS,Adani Ports,Infrastructure
+NTPC.NS,NTPC,Power
+POWERGRID.NS,Power Grid Corp,Power
+TATAPOWER.NS,Tata Power,Power
+ADANIGREEN.NS,Adani Green Energy,Power
+NHPC.NS,NHPC,Power
+JSW ENERGY.NS,JSW Energy,Power
+LICI.NS,LIC of India,Insurance
+SBILIFE.NS,SBI Life Insurance,Insurance
+HDFCLIFE.NS,HDFC Life Insurance,Insurance
+ICICIPRULI.NS,ICICI Pru Life,Insurance
+NIACL.NS,New India Assurance,Insurance
+DMART.NS,Avenue Supermarts,Retail
+TRENT.NS,Trent,Retail
+PAGEIND.NS,Page Industries,Consumer Goods
+VBL.NS,Varun Beverages,Consumer Goods
+HDFCAMC.NS,HDFC AMC,Financial Services
+MUTHOOTFIN.NS,Muthoot Finance,Financial Services
+BAJAJHLDNG.NS,Bajaj Holdings,Financial Services
+PFC.NS,Power Finance Corp,Financial Services
+SIEMENS.NS,Siemens,Capital Goods
+ABB.NS,ABB India,Capital Goods
+BHEL.NS,Bharat Heavy Electricals,Capital Goods
+BEL.NS,Bharat Electronics,Defense
+HAL.NS,Hindustan Aeronautics,Defense
+ADANIENT.NS,Adani Enterprises,Diversified
+GODREJCP.NS,Godrej Consumer,FMCG
+UPL.NS,UPL,Chemicals
+PIDILITIND.NS,Pidilite Industries,Chemicals
+ASIANPAINT.NS,Asian Paints,Paints
+BERGER.NS,Berger Paints,Paints
+INDIGO.NS,InterGlobe Aviation,Aviation
+SPICEJET.NS,SpiceJet,Aviation
+IRCTC.NS,Indian Railway Catering,Transport
+CONCOR.NS,Container Corp of India,Transport
+APOLLOHOSP.NS,Apollo Hospitals,Healthcare
+FORTIS.NS,Fortis Healthcare,Healthcare
+MAXHEALTH.NS,Max Healthcare,Healthcare
+METROPOLIS.NS,Metropolis Healthcare,Healthcare
+MCDOWELL-N.NS,United Breweries,Beverages
+UBL.NS,United Breweries,Beverages
+INDIANHUME.NS,Indian Hume Pipe,Construction Materials
+JINDALSTEL.NS,Jindal Steel & Power,Metals
+SAIL.NS,Steel Authority of India,Metals
+NMDC.NS,NMDC,Mining
+RITES.NS,RITES,Infrastructure
+RAILTEL.NS,RailTel Corp,Telecom
+ZOMATO.NS,Zomato,Consumer Services
+PAYTM.NS,Paytm,Financial Services
+NYKAA.NS,FSN E-Commerce,Consumer Services
+POLICYBZR.NS,PB Fintech,Financial Services

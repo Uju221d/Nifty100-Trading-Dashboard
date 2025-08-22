@@ -1,0 +1,27 @@
+[theme]
+# Theme base: "light" or "dark"
+base="dark"
+
+# Main accent color (buttons, highlights)
+primaryColor="#1abc9c"
+
+# App background color
+backgroundColor="#0e1117"
+
+# Secondary background for widgets, sidebar, etc.
+secondaryBackgroundColor="#161b22"
+
+# Default text color
+textColor="#fafafa"
+
+# Link color
+linkColor="#1abc9c"
+
+# Font options: "sans-serif", "serif", "monospace"
+font="sans-serif"
+
+# Corner radius for all UI elements
+baseRadius="0.5rem"
+
+# Corner radius for buttons
+buttonRadius="0.5rem"

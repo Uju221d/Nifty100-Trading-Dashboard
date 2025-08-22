@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIFTY 100 Trading Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title">
+                    <h1>NIFTY 100 Trading Dashboard</h1>
+                    <p class="header-subtitle">Last Updated: <span id="last-update"></span></p>
+                </div>
+                <div class="header-metrics">
+                    <div class="metric-card">
+                        <span class="metric-value" id="total-stocks">25</span>
+                        <span class="metric-label">Stocks Scanned</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value" id="active-signals">0</span>
+                        <span class="metric-label">Active Signals</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value" id="best-sector">--</span>
+                        <span class="metric-label">Best Sector</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Navigation Tabs -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="overview">Stock Overview</button>
+            <button class="tab-btn" data-tab="analysis">Detailed Analysis</button>
+            <button class="tab-btn" data-tab="analytics">Analytics</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Tab 1: Stock Overview -->
+            <div id="overview" class="tab-panel active">
+                <div class="controls-panel">
+                    <div class="filters">
+                        <div class="form-group">
+                            <label class="form-label">Sector Filter:</label>
+                            <select id="sector-filter" class="form-control">
+                                <option value="">All Sectors</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input type="checkbox" id="signals-only"> Signals Only
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Price Range: ₹<span id="price-range-min">0</span> - ₹<span id="price-range-max">25000</span></label>
+                            <input type="range" id="price-range" min="0" max="25000" value="25000" class="form-control">
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn--secondary" id="export-csv">Export CSV</button>
+                    </div>
+                </div>
+
+                <div class="stock-table-container">
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-sort="symbol">Stock</th>
+                                <th class="sortable" data-sort="price">Price</th>
+                                <th class="sortable" data-sort="change">Change %</th>
+                                <th class="sortable" data-sort="sector">Sector</th>
+                                <th>Signals Today</th>
+                                <th>Recommended Strategy</th>
+                                <th class="sortable" data-sort="winRate">Win %</th>
+                                <th class="sortable" data-sort="profitFactor">Profit Factor</th>
+                                <th class="sortable" data-sort="ltmReturn">LTM Return %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stock-table-body">
+                            <!-- Dynamic content -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tab 2: Detailed Analysis -->
+            <div id="analysis" class="tab-panel">
+                <div class="analysis-controls">
+                    <div class="form-group">
+                        <label class="form-label">Select Stock:</label>
+                        <select id="stock-selector" class="form-control">
+                            <!-- Dynamic options -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="analysis-content">
+                    <div class="chart-section">
+                        <div class="chart-container" style="position: relative; height: 400px;">
+                            <canvas id="price-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="indicators-section">
+                        <div class="indicator-charts">
+                            <div class="chart-container" style="position: relative; height: 150px;">
+                                <canvas id="macd-chart"></canvas>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 150px;">
+                                <canvas id="rsi-chart"></canvas>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 150px;">
+                                <canvas id="volume-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="performance-section">
+                        <div class="current-signals">
+                            <h3>Current Signals</h3>
+                            <div id="current-signals-list" class="signals-grid">
+                                <!-- Dynamic content -->
+                            </div>
+                        </div>
+
+                        <div class="strategy-comparison">
+                            <h3>Strategy Performance Comparison</h3>
+                            <div class="strategy-table-container">
+                                <table class="strategy-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Strategy</th>
+                                            <th>Win Rate</th>
+                                            <th>Profit Factor</th>
+                                            <th>Avg Return</th>
+                                            <th>Max Drawdown</th>
+                                            <th>Sharpe Ratio</th>
+                                            <th>CAGR</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="strategy-table-body">
+                                        <!-- Dynamic content -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Analytics -->
+            <div id="analytics" class="tab-panel">
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>Signal Distribution by Strategy</h3>
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="strategy-pie-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <h3>Signals by Sector</h3>
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="sector-bar-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <h3>Top 10 Performers</h3>
+                        <div class="top-performers" id="top-performers">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <h3>Market Statistics</h3>
+                        <div class="market-stats" id="market-stats">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heatmap-section">
+                    <h3>Sector vs Strategy Heatmap</h3>
+                    <div id="heatmap-container" class="heatmap-container">
+                        <!-- Dynamic heatmap content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
